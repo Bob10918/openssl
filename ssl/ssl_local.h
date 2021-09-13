@@ -703,7 +703,7 @@
 
 /* Returns true if the curve ID is for an OQS KEM */
 // TBD, ideally, this bracket is also generated
-#define IS_OQS_KEM_CURVEID(id) (id >= 0x01FF && id <= 0x0250)
+#define IS_OQS_KEM_CURVEID(id) (id >= 0x01FF && id <= 0x0260)
 
 /* Returns true if the curve ID is for an OQS hybrid KEM */
 // TBD, ideally, this bracket is also generated
