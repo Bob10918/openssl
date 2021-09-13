@@ -515,6 +515,33 @@ static const char* OQS_CURVE_ID_NAME_STR(int id) {
   case 0x0232: return "sntrup653";
   case 0x0233: return "sntrup761";
   case 0x0234: return "sntrup857";
+  case 0x0241: return "ledacrypt_23371";
+  case 0x0242: return "ledacrypt_16067";
+  case 0x0243: return "ledacrypt_13397";
+  case 0x0244: return "ledacrypt_28277";
+  case 0x0245: return "ledacrypt_19709";
+  case 0x0246: return "ledacrypt_16229";
+  case 0x0247: return "ledacrypt_40787";
+  case 0x0248: return "ledacrypt_28411";
+  case 0x0249: return "ledacrypt_22901";
+  case 0x024a: return "ledacrypt_52667";
+  case 0x024b: return "ledacrypt_36629";
+  case 0x024c: return "ledacrypt_30803";
+  case 0x024d: return "ledacrypt_61717";
+  case 0x024e: return "ledacrypt_42677";
+  case 0x024f: return "ledacrypt_35507";
+  case 0x0250: return "ledacrypt_83579";
+  case 0x0251: return "ledacrypt_58171";
+  case 0x0252: return "ledacrypt_48371";
+  case 0x0253: return "ledacrypt_cpa_10883";
+  case 0x0254: return "ledacrypt_cpa_8237";
+  case 0x0255: return "ledacrypt_cpa_7187";
+  case 0x0256: return "ledacrypt_cpa_21011";
+  case 0x0257: return "ledacrypt_cpa_15373";
+  case 0x0258: return "ledacrypt_cpa_13109";
+  case 0x0259: return "ledacrypt_cpa_35339";
+  case 0x025a: return "ledacrypt_cpa_25603";
+  case 0x025b: return "ledacrypt_cpa_21611";
   ///// OQS_TEMPLATE_FRAGMENT_OQS_CURVE_ID_NAME_STR_END
   ///// OQS_TEMPLATE_FRAGMENT_OQS_CURVE_ID_NAME_STR_HYBRID_START
    case 0x2F00: return "p256_frodo640aes hybrid";
@@ -555,6 +582,33 @@ static const char* OQS_CURVE_ID_NAME_STR(int id) {
    case 0x2F32: return "p256_sntrup653 hybrid";
    case 0x2F33: return "p384_sntrup761 hybrid";
    case 0x2F34: return "p384_sntrup857 hybrid";
+   case 0x2f41: return "p256_ledacrypt_23371 hybrid";
+   case 0x2f42: return "p256_ledacrypt_16067 hybrid";
+   case 0x2f43: return "p256_ledacrypt_13397 hybrid";
+   case 0x2f44: return "p256_ledacrypt_28277 hybrid";
+   case 0x2f45: return "p256_ledacrypt_19709 hybrid";
+   case 0x2f46: return "p256_ledacrypt_16229 hybrid";
+   case 0x2f47: return "p384_ledacrypt_40787 hybrid";
+   case 0x2f48: return "p384_ledacrypt_28411 hybrid";
+   case 0x2f49: return "p384_ledacrypt_22901 hybrid";
+   case 0x2f4a: return "p384_ledacrypt_52667 hybrid";
+   case 0x2f4b: return "p384_ledacrypt_36629 hybrid";
+   case 0x2f4c: return "p384_ledacrypt_30803 hybrid";
+   case 0x2f4d: return "p521_ledacrypt_61717 hybrid";
+   case 0x2f4e: return "p521_ledacrypt_42677 hybrid";
+   case 0x2f4f: return "p521_ledacrypt_35507 hybrid";
+   case 0x2f50: return "p521_ledacrypt_83579 hybrid";
+   case 0x2f51: return "p521_ledacrypt_58171 hybrid";
+   case 0x2f52: return "p521_ledacrypt_48371 hybrid";
+   case 0x2f53: return "p256_ledacrypt_cpa_10883 hybrid";
+   case 0x2f54: return "p256_ledacrypt_cpa_8237 hybrid";
+   case 0x2f55: return "p256_ledacrypt_cpa_7187 hybrid";
+   case 0x2f56: return "p384_ledacrypt_cpa_21011 hybrid";
+   case 0x2f57: return "p384_ledacrypt_cpa_15373 hybrid";
+   case 0x2f58: return "p384_ledacrypt_cpa_13109 hybrid";
+   case 0x2f59: return "p521_ledacrypt_cpa_35339 hybrid";
+   case 0x2f5a: return "p521_ledacrypt_cpa_25603 hybrid";
+   case 0x2f5b: return "p521_ledacrypt_cpa_21611 hybrid";
   ///// OQS_TEMPLATE_FRAGMENT_OQS_CURVE_ID_NAME_STR_HYBRID_END
   default: return "";
   }

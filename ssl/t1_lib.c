@@ -225,6 +225,33 @@ static const TLS_GROUP_INFO oqs_nid_list[] = {
     {NID_sntrup653, 128, TLS_CURVE_CUSTOM}, /* sntrup653 (0x0232) */
     {NID_sntrup761, 192, TLS_CURVE_CUSTOM}, /* sntrup761 (0x0233) */
     {NID_sntrup857, 192, TLS_CURVE_CUSTOM}, /* sntrup857 (0x0234) */
+    {NID_ledacrypt_23371, 128, TLS_CURVE_CUSTOM}, /* ledacrypt_23371 (0x0241) */
+    {NID_ledacrypt_16067, 128, TLS_CURVE_CUSTOM}, /* ledacrypt_16067 (0x0242) */
+    {NID_ledacrypt_13397, 128, TLS_CURVE_CUSTOM}, /* ledacrypt_13397 (0x0243) */
+    {NID_ledacrypt_28277, 128, TLS_CURVE_CUSTOM}, /* ledacrypt_28277 (0x0244) */
+    {NID_ledacrypt_19709, 128, TLS_CURVE_CUSTOM}, /* ledacrypt_19709 (0x0245) */
+    {NID_ledacrypt_16229, 128, TLS_CURVE_CUSTOM}, /* ledacrypt_16229 (0x0246) */
+    {NID_ledacrypt_40787, 192, TLS_CURVE_CUSTOM}, /* ledacrypt_40787 (0x0247) */
+    {NID_ledacrypt_28411, 192, TLS_CURVE_CUSTOM}, /* ledacrypt_28411 (0x0248) */
+    {NID_ledacrypt_22901, 192, TLS_CURVE_CUSTOM}, /* ledacrypt_22901 (0x0249) */
+    {NID_ledacrypt_52667, 192, TLS_CURVE_CUSTOM}, /* ledacrypt_52667 (0x024a) */
+    {NID_ledacrypt_36629, 192, TLS_CURVE_CUSTOM}, /* ledacrypt_36629 (0x024b) */
+    {NID_ledacrypt_30803, 192, TLS_CURVE_CUSTOM}, /* ledacrypt_30803 (0x024c) */
+    {NID_ledacrypt_61717, 256, TLS_CURVE_CUSTOM}, /* ledacrypt_61717 (0x024d) */
+    {NID_ledacrypt_42677, 256, TLS_CURVE_CUSTOM}, /* ledacrypt_42677 (0x024e) */
+    {NID_ledacrypt_35507, 256, TLS_CURVE_CUSTOM}, /* ledacrypt_35507 (0x024f) */
+    {NID_ledacrypt_83579, 256, TLS_CURVE_CUSTOM}, /* ledacrypt_83579 (0x0250) */
+    {NID_ledacrypt_58171, 256, TLS_CURVE_CUSTOM}, /* ledacrypt_58171 (0x0251) */
+    {NID_ledacrypt_48371, 256, TLS_CURVE_CUSTOM}, /* ledacrypt_48371 (0x0252) */
+    {NID_ledacrypt_cpa_10883, 128, TLS_CURVE_CUSTOM}, /* ledacrypt_cpa_10883 (0x0253) */
+    {NID_ledacrypt_cpa_8237, 128, TLS_CURVE_CUSTOM}, /* ledacrypt_cpa_8237 (0x0254) */
+    {NID_ledacrypt_cpa_7187, 128, TLS_CURVE_CUSTOM}, /* ledacrypt_cpa_7187 (0x0255) */
+    {NID_ledacrypt_cpa_21011, 192, TLS_CURVE_CUSTOM}, /* ledacrypt_cpa_21011 (0x0256) */
+    {NID_ledacrypt_cpa_15373, 192, TLS_CURVE_CUSTOM}, /* ledacrypt_cpa_15373 (0x0257) */
+    {NID_ledacrypt_cpa_13109, 192, TLS_CURVE_CUSTOM}, /* ledacrypt_cpa_13109 (0x0258) */
+    {NID_ledacrypt_cpa_35339, 256, TLS_CURVE_CUSTOM}, /* ledacrypt_cpa_35339 (0x0259) */
+    {NID_ledacrypt_cpa_25603, 256, TLS_CURVE_CUSTOM}, /* ledacrypt_cpa_25603 (0x025a) */
+    {NID_ledacrypt_cpa_21611, 256, TLS_CURVE_CUSTOM}, /* ledacrypt_cpa_21611 (0x025b) */
 ///// OQS_TEMPLATE_FRAGMENT_OQS_NID_LIST_END
 };
     /* Hybrid OQS groups. Security level is classical. */
@@ -268,6 +295,33 @@ static const TLS_GROUP_INFO oqs_hybrid_nid_list[] = {
  {NID_p256_sntrup653, 128, TLS_CURVE_CUSTOM}, /* p256/384/521 + sntrup653 hybrid (0x0232) */
  {NID_p384_sntrup761, 192, TLS_CURVE_CUSTOM}, /* p256/384/521 + sntrup761 hybrid (0x0233) */
  {NID_p384_sntrup857, 192, TLS_CURVE_CUSTOM}, /* p256/384/521 + sntrup857 hybrid (0x0234) */
+ {NID_p256_ledacrypt_23371, 128, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_23371 hybrid (0x0241) */
+ {NID_p256_ledacrypt_16067, 128, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_16067 hybrid (0x0242) */
+ {NID_p256_ledacrypt_13397, 128, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_13397 hybrid (0x0243) */
+ {NID_p256_ledacrypt_28277, 128, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_28277 hybrid (0x0244) */
+ {NID_p256_ledacrypt_19709, 128, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_19709 hybrid (0x0245) */
+ {NID_p256_ledacrypt_16229, 128, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_16229 hybrid (0x0246) */
+ {NID_p384_ledacrypt_40787, 192, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_40787 hybrid (0x0247) */
+ {NID_p384_ledacrypt_28411, 192, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_28411 hybrid (0x0248) */
+ {NID_p384_ledacrypt_22901, 192, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_22901 hybrid (0x0249) */
+ {NID_p384_ledacrypt_52667, 192, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_52667 hybrid (0x024a) */
+ {NID_p384_ledacrypt_36629, 192, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_36629 hybrid (0x024b) */
+ {NID_p384_ledacrypt_30803, 192, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_30803 hybrid (0x024c) */
+ {NID_p521_ledacrypt_61717, 256, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_61717 hybrid (0x024d) */
+ {NID_p521_ledacrypt_42677, 256, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_42677 hybrid (0x024e) */
+ {NID_p521_ledacrypt_35507, 256, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_35507 hybrid (0x024f) */
+ {NID_p521_ledacrypt_83579, 256, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_83579 hybrid (0x0250) */
+ {NID_p521_ledacrypt_58171, 256, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_58171 hybrid (0x0251) */
+ {NID_p521_ledacrypt_48371, 256, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_48371 hybrid (0x0252) */
+ {NID_p256_ledacrypt_cpa_10883, 128, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_cpa_10883 hybrid (0x0253) */
+ {NID_p256_ledacrypt_cpa_8237, 128, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_cpa_8237 hybrid (0x0254) */
+ {NID_p256_ledacrypt_cpa_7187, 128, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_cpa_7187 hybrid (0x0255) */
+ {NID_p384_ledacrypt_cpa_21011, 192, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_cpa_21011 hybrid (0x0256) */
+ {NID_p384_ledacrypt_cpa_15373, 192, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_cpa_15373 hybrid (0x0257) */
+ {NID_p384_ledacrypt_cpa_13109, 192, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_cpa_13109 hybrid (0x0258) */
+ {NID_p521_ledacrypt_cpa_35339, 256, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_cpa_35339 hybrid (0x0259) */
+ {NID_p521_ledacrypt_cpa_25603, 256, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_cpa_25603 hybrid (0x025a) */
+ {NID_p521_ledacrypt_cpa_21611, 256, TLS_CURVE_CUSTOM}, /* p256/384/521 + ledacrypt_cpa_21611 hybrid (0x025b) */
 ///// OQS_TEMPLATE_FRAGMENT_OQS_NID_LIST_HYBRID_END
 };
 
@@ -299,6 +353,15 @@ static const uint16_t eccurves_default[] = {
     0x2F2C, /* OQS hqc128 hybrid */
     0x2F2F, /* OQS ntrulpr653 hybrid */
     0x2F32, /* OQS sntrup653 hybrid */
+    0x2f41, /* OQS ledacrypt_23371 hybrid */
+    0x2f42, /* OQS ledacrypt_16067 hybrid */
+    0x2f43, /* OQS ledacrypt_13397 hybrid */
+    0x2f44, /* OQS ledacrypt_28277 hybrid */
+    0x2f45, /* OQS ledacrypt_19709 hybrid */
+    0x2f46, /* OQS ledacrypt_16229 hybrid */
+    0x2f53, /* OQS ledacrypt_cpa_10883 hybrid */
+    0x2f54, /* OQS ledacrypt_cpa_8237 hybrid */
+    0x2f55, /* OQS ledacrypt_cpa_7187 hybrid */
 ///// OQS_TEMPLATE_FRAGMENT_ECCURVES_DEFAULT_HYBRID_END
 };
 
@@ -395,6 +458,60 @@ static const uint16_t oqs_all_tls13_server_groups[] = {
     0x2F33, /* OQS sntrup761 hybrid */
     0x0234, /* sntrup857 */
     0x2F34, /* OQS sntrup857 hybrid */
+    0x0241, /* ledacrypt_23371 */
+    0x2f41, /* OQS ledacrypt_23371 hybrid */
+    0x0242, /* ledacrypt_16067 */
+    0x2f42, /* OQS ledacrypt_16067 hybrid */
+    0x0243, /* ledacrypt_13397 */
+    0x2f43, /* OQS ledacrypt_13397 hybrid */
+    0x0244, /* ledacrypt_28277 */
+    0x2f44, /* OQS ledacrypt_28277 hybrid */
+    0x0245, /* ledacrypt_19709 */
+    0x2f45, /* OQS ledacrypt_19709 hybrid */
+    0x0246, /* ledacrypt_16229 */
+    0x2f46, /* OQS ledacrypt_16229 hybrid */
+    0x0247, /* ledacrypt_40787 */
+    0x2f47, /* OQS ledacrypt_40787 hybrid */
+    0x0248, /* ledacrypt_28411 */
+    0x2f48, /* OQS ledacrypt_28411 hybrid */
+    0x0249, /* ledacrypt_22901 */
+    0x2f49, /* OQS ledacrypt_22901 hybrid */
+    0x024a, /* ledacrypt_52667 */
+    0x2f4a, /* OQS ledacrypt_52667 hybrid */
+    0x024b, /* ledacrypt_36629 */
+    0x2f4b, /* OQS ledacrypt_36629 hybrid */
+    0x024c, /* ledacrypt_30803 */
+    0x2f4c, /* OQS ledacrypt_30803 hybrid */
+    0x024d, /* ledacrypt_61717 */
+    0x2f4d, /* OQS ledacrypt_61717 hybrid */
+    0x024e, /* ledacrypt_42677 */
+    0x2f4e, /* OQS ledacrypt_42677 hybrid */
+    0x024f, /* ledacrypt_35507 */
+    0x2f4f, /* OQS ledacrypt_35507 hybrid */
+    0x0250, /* ledacrypt_83579 */
+    0x2f50, /* OQS ledacrypt_83579 hybrid */
+    0x0251, /* ledacrypt_58171 */
+    0x2f51, /* OQS ledacrypt_58171 hybrid */
+    0x0252, /* ledacrypt_48371 */
+    0x2f52, /* OQS ledacrypt_48371 hybrid */
+    0x0253, /* ledacrypt_cpa_10883 */
+    0x2f53, /* OQS ledacrypt_cpa_10883 hybrid */
+    0x0254, /* ledacrypt_cpa_8237 */
+    0x2f54, /* OQS ledacrypt_cpa_8237 hybrid */
+    0x0255, /* ledacrypt_cpa_7187 */
+    0x2f55, /* OQS ledacrypt_cpa_7187 hybrid */
+    0x0256, /* ledacrypt_cpa_21011 */
+    0x2f56, /* OQS ledacrypt_cpa_21011 hybrid */
+    0x0257, /* ledacrypt_cpa_15373 */
+    0x2f57, /* OQS ledacrypt_cpa_15373 hybrid */
+    0x0258, /* ledacrypt_cpa_13109 */
+    0x2f58, /* OQS ledacrypt_cpa_13109 hybrid */
+    0x0259, /* ledacrypt_cpa_35339 */
+    0x2f59, /* OQS ledacrypt_cpa_35339 hybrid */
+    0x025a, /* ledacrypt_cpa_25603 */
+    0x2f5a, /* OQS ledacrypt_cpa_25603 hybrid */
+    0x025b, /* ledacrypt_cpa_21611 */
+    0x2f5b, /* OQS ledacrypt_cpa_21611 hybrid */
 ///// OQS_TEMPLATE_FRAGMENT_ALL_OQS_CURVEIDS_END
 };
 

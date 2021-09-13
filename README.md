@@ -79,6 +79,7 @@ The following quantum-safe algorithms from liboqs are supported (assuming they h
 - **CRYSTALS-Kyber**: `kyber512`, `kyber768`, `kyber1024`, `kyber90s512`, `kyber90s768`, `kyber90s1024`
 - **FrodoKEM**: `frodo640aes`, `frodo640shake`, `frodo976aes`, `frodo976shake`, `frodo1344aes`, `frodo1344shake`
 - **HQC**: `hqc128`, `hqc192`, `hqc256`†
+- **LEDAcrypt**: `ledacrypt_23371`, `ledacrypt_16067`, `ledacrypt_13397`, `ledacrypt_28277`, `ledacrypt_19709`, `ledacrypt_16229`, `ledacrypt_40787`, `ledacrypt_28411`, `ledacrypt_22901`, `ledacrypt_52667`, `ledacrypt_36629`, `ledacrypt_30803`, `ledacrypt_61717`, `ledacrypt_42677`, `ledacrypt_35507`, `ledacrypt_83579`, `ledacrypt_58171`, `ledacrypt_48371`, `ledacrypt_cpa_10883`, `ledacrypt_cpa_8237`, `ledacrypt_cpa_7187`, `ledacrypt_cpa_21011`, `ledacrypt_cpa_15373`, `ledacrypt_cpa_13109`, `ledacrypt_cpa_35339`, `ledacrypt_cpa_25603`, `ledacrypt_cpa_21611`
 - **NTRU**: `ntru_hps2048509`, `ntru_hps2048677`, `ntru_hps4096821`, `ntru_hrss701`
 - **NTRU-Prime**: `ntrulpr653`, `ntrulpr761`, `ntrulpr857`, `sntrup653`, `sntrup761`, `sntrup857`
 - **SABER**: `lightsaber`, `saber`, `firesaber`

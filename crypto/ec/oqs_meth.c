@@ -158,6 +158,33 @@ int oqssl_kem_nids_list[] = {
         NID_sntrup653,
         NID_sntrup761,
         NID_sntrup857,
+        NID_ledacrypt_23371,
+        NID_ledacrypt_16067,
+        NID_ledacrypt_13397,
+        NID_ledacrypt_28277,
+        NID_ledacrypt_19709,
+        NID_ledacrypt_16229,
+        NID_ledacrypt_40787,
+        NID_ledacrypt_28411,
+        NID_ledacrypt_22901,
+        NID_ledacrypt_52667,
+        NID_ledacrypt_36629,
+        NID_ledacrypt_30803,
+        NID_ledacrypt_61717,
+        NID_ledacrypt_42677,
+        NID_ledacrypt_35507,
+        NID_ledacrypt_83579,
+        NID_ledacrypt_58171,
+        NID_ledacrypt_48371,
+        NID_ledacrypt_cpa_10883,
+        NID_ledacrypt_cpa_8237,
+        NID_ledacrypt_cpa_7187,
+        NID_ledacrypt_cpa_21011,
+        NID_ledacrypt_cpa_15373,
+        NID_ledacrypt_cpa_13109,
+        NID_ledacrypt_cpa_35339,
+        NID_ledacrypt_cpa_25603,
+        NID_ledacrypt_cpa_21611,
 /////// OQS_TEMPLATE_FRAGMENT_LIST_KNOWN_KEM_NIDS_END
 };
 
@@ -356,6 +383,87 @@ char* get_oqs_alg_name(int openssl_nid)
     case NID_sntrup857:
     case NID_p384_sntrup857:
       return OQS_KEM_alg_ntruprime_sntrup857;
+    case NID_ledacrypt_23371:
+    case NID_p256_ledacrypt_23371:
+      return OQS_KEM_alg_ledacrypt_23371;
+    case NID_ledacrypt_16067:
+    case NID_p256_ledacrypt_16067:
+      return OQS_KEM_alg_ledacrypt_16067;
+    case NID_ledacrypt_13397:
+    case NID_p256_ledacrypt_13397:
+      return OQS_KEM_alg_ledacrypt_13397;
+    case NID_ledacrypt_28277:
+    case NID_p256_ledacrypt_28277:
+      return OQS_KEM_alg_ledacrypt_28277;
+    case NID_ledacrypt_19709:
+    case NID_p256_ledacrypt_19709:
+      return OQS_KEM_alg_ledacrypt_19709;
+    case NID_ledacrypt_16229:
+    case NID_p256_ledacrypt_16229:
+      return OQS_KEM_alg_ledacrypt_16229;
+    case NID_ledacrypt_40787:
+    case NID_p384_ledacrypt_40787:
+      return OQS_KEM_alg_ledacrypt_40787;
+    case NID_ledacrypt_28411:
+    case NID_p384_ledacrypt_28411:
+      return OQS_KEM_alg_ledacrypt_28411;
+    case NID_ledacrypt_22901:
+    case NID_p384_ledacrypt_22901:
+      return OQS_KEM_alg_ledacrypt_22901;
+    case NID_ledacrypt_52667:
+    case NID_p384_ledacrypt_52667:
+      return OQS_KEM_alg_ledacrypt_52667;
+    case NID_ledacrypt_36629:
+    case NID_p384_ledacrypt_36629:
+      return OQS_KEM_alg_ledacrypt_36629;
+    case NID_ledacrypt_30803:
+    case NID_p384_ledacrypt_30803:
+      return OQS_KEM_alg_ledacrypt_30803;
+    case NID_ledacrypt_61717:
+    case NID_p521_ledacrypt_61717:
+      return OQS_KEM_alg_ledacrypt_61717;
+    case NID_ledacrypt_42677:
+    case NID_p521_ledacrypt_42677:
+      return OQS_KEM_alg_ledacrypt_42677;
+    case NID_ledacrypt_35507:
+    case NID_p521_ledacrypt_35507:
+      return OQS_KEM_alg_ledacrypt_35507;
+    case NID_ledacrypt_83579:
+    case NID_p521_ledacrypt_83579:
+      return OQS_KEM_alg_ledacrypt_83579;
+    case NID_ledacrypt_58171:
+    case NID_p521_ledacrypt_58171:
+      return OQS_KEM_alg_ledacrypt_58171;
+    case NID_ledacrypt_48371:
+    case NID_p521_ledacrypt_48371:
+      return OQS_KEM_alg_ledacrypt_48371;
+    case NID_ledacrypt_cpa_10883:
+    case NID_p256_ledacrypt_cpa_10883:
+      return OQS_KEM_alg_ledacrypt_cpa_10883;
+    case NID_ledacrypt_cpa_8237:
+    case NID_p256_ledacrypt_cpa_8237:
+      return OQS_KEM_alg_ledacrypt_cpa_8237;
+    case NID_ledacrypt_cpa_7187:
+    case NID_p256_ledacrypt_cpa_7187:
+      return OQS_KEM_alg_ledacrypt_cpa_7187;
+    case NID_ledacrypt_cpa_21011:
+    case NID_p384_ledacrypt_cpa_21011:
+      return OQS_KEM_alg_ledacrypt_cpa_21011;
+    case NID_ledacrypt_cpa_15373:
+    case NID_p384_ledacrypt_cpa_15373:
+      return OQS_KEM_alg_ledacrypt_cpa_15373;
+    case NID_ledacrypt_cpa_13109:
+    case NID_p384_ledacrypt_cpa_13109:
+      return OQS_KEM_alg_ledacrypt_cpa_13109;
+    case NID_ledacrypt_cpa_35339:
+    case NID_p521_ledacrypt_cpa_35339:
+      return OQS_KEM_alg_ledacrypt_cpa_35339;
+    case NID_ledacrypt_cpa_25603:
+    case NID_p521_ledacrypt_cpa_25603:
+      return OQS_KEM_alg_ledacrypt_cpa_25603;
+    case NID_ledacrypt_cpa_21611:
+    case NID_p521_ledacrypt_cpa_21611:
+      return OQS_KEM_alg_ledacrypt_cpa_21611;
 ///// OQS_TEMPLATE_FRAGMENT_ASSIGN_SIG_ALG_END
     default:
       return NULL;

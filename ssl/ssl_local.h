@@ -563,8 +563,35 @@
   (nid == NID_sntrup653 ? 0x0232 : \
   (nid == NID_sntrup761 ? 0x0233 : \
   (nid == NID_sntrup857 ? 0x0234 : \
+  (nid == NID_ledacrypt_23371 ? 0x0241 : \
+  (nid == NID_ledacrypt_16067 ? 0x0242 : \
+  (nid == NID_ledacrypt_13397 ? 0x0243 : \
+  (nid == NID_ledacrypt_28277 ? 0x0244 : \
+  (nid == NID_ledacrypt_19709 ? 0x0245 : \
+  (nid == NID_ledacrypt_16229 ? 0x0246 : \
+  (nid == NID_ledacrypt_40787 ? 0x0247 : \
+  (nid == NID_ledacrypt_28411 ? 0x0248 : \
+  (nid == NID_ledacrypt_22901 ? 0x0249 : \
+  (nid == NID_ledacrypt_52667 ? 0x024a : \
+  (nid == NID_ledacrypt_36629 ? 0x024b : \
+  (nid == NID_ledacrypt_30803 ? 0x024c : \
+  (nid == NID_ledacrypt_61717 ? 0x024d : \
+  (nid == NID_ledacrypt_42677 ? 0x024e : \
+  (nid == NID_ledacrypt_35507 ? 0x024f : \
+  (nid == NID_ledacrypt_83579 ? 0x0250 : \
+  (nid == NID_ledacrypt_58171 ? 0x0251 : \
+  (nid == NID_ledacrypt_48371 ? 0x0252 : \
+  (nid == NID_ledacrypt_cpa_10883 ? 0x0253 : \
+  (nid == NID_ledacrypt_cpa_8237 ? 0x0254 : \
+  (nid == NID_ledacrypt_cpa_7187 ? 0x0255 : \
+  (nid == NID_ledacrypt_cpa_21011 ? 0x0256 : \
+  (nid == NID_ledacrypt_cpa_15373 ? 0x0257 : \
+  (nid == NID_ledacrypt_cpa_13109 ? 0x0258 : \
+  (nid == NID_ledacrypt_cpa_35339 ? 0x0259 : \
+  (nid == NID_ledacrypt_cpa_25603 ? 0x025a : \
+  (nid == NID_ledacrypt_cpa_21611 ? 0x025b : \
   0 \
-  ))))))))))))))))))))))))))))))))))))))
+  )))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
 ///// OQS_TEMPLATE_FRAGMENT_OQS_KEM_CURVEID_END
 
 ///// OQS_TEMPLATE_FRAGMENT_OQS_KEM_HYBRID_CURVEID_START
@@ -607,8 +634,35 @@
     (nid == NID_p256_sntrup653 ? 0x2F32 : \
     (nid == NID_p384_sntrup761 ? 0x2F33 : \
     (nid == NID_p384_sntrup857 ? 0x2F34 : \
+    (nid == NID_p256_ledacrypt_23371 ? 0x2f41 : \
+    (nid == NID_p256_ledacrypt_16067 ? 0x2f42 : \
+    (nid == NID_p256_ledacrypt_13397 ? 0x2f43 : \
+    (nid == NID_p256_ledacrypt_28277 ? 0x2f44 : \
+    (nid == NID_p256_ledacrypt_19709 ? 0x2f45 : \
+    (nid == NID_p256_ledacrypt_16229 ? 0x2f46 : \
+    (nid == NID_p384_ledacrypt_40787 ? 0x2f47 : \
+    (nid == NID_p384_ledacrypt_28411 ? 0x2f48 : \
+    (nid == NID_p384_ledacrypt_22901 ? 0x2f49 : \
+    (nid == NID_p384_ledacrypt_52667 ? 0x2f4a : \
+    (nid == NID_p384_ledacrypt_36629 ? 0x2f4b : \
+    (nid == NID_p384_ledacrypt_30803 ? 0x2f4c : \
+    (nid == NID_p521_ledacrypt_61717 ? 0x2f4d : \
+    (nid == NID_p521_ledacrypt_42677 ? 0x2f4e : \
+    (nid == NID_p521_ledacrypt_35507 ? 0x2f4f : \
+    (nid == NID_p521_ledacrypt_83579 ? 0x2f50 : \
+    (nid == NID_p521_ledacrypt_58171 ? 0x2f51 : \
+    (nid == NID_p521_ledacrypt_48371 ? 0x2f52 : \
+    (nid == NID_p256_ledacrypt_cpa_10883 ? 0x2f53 : \
+    (nid == NID_p256_ledacrypt_cpa_8237 ? 0x2f54 : \
+    (nid == NID_p256_ledacrypt_cpa_7187 ? 0x2f55 : \
+    (nid == NID_p384_ledacrypt_cpa_21011 ? 0x2f56 : \
+    (nid == NID_p384_ledacrypt_cpa_15373 ? 0x2f57 : \
+    (nid == NID_p384_ledacrypt_cpa_13109 ? 0x2f58 : \
+    (nid == NID_p521_ledacrypt_cpa_35339 ? 0x2f59 : \
+    (nid == NID_p521_ledacrypt_cpa_25603 ? 0x2f5a : \
+    (nid == NID_p521_ledacrypt_cpa_21611 ? 0x2f5b : \
   0 \
-  ))))))))))))))))))))))))))))))))))))))
+  )))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
 ///// OQS_TEMPLATE_FRAGMENT_OQS_KEM_HYBRID_CURVEID_END
 
   /* Returns the non-hybrid OQS KEM NID for a PQ or hybrid curve ID */
@@ -652,8 +706,35 @@
   (curveID == 0x0232 || curveID == 0x2F32 ? NID_sntrup653 : \
   (curveID == 0x0233 || curveID == 0x2F33 ? NID_sntrup761 : \
   (curveID == 0x0234 || curveID == 0x2F34 ? NID_sntrup857 : \
+  (curveID == 0x0241 || curveID == 0x2f41 ? NID_ledacrypt_23371 : \
+  (curveID == 0x0242 || curveID == 0x2f42 ? NID_ledacrypt_16067 : \
+  (curveID == 0x0243 || curveID == 0x2f43 ? NID_ledacrypt_13397 : \
+  (curveID == 0x0244 || curveID == 0x2f44 ? NID_ledacrypt_28277 : \
+  (curveID == 0x0245 || curveID == 0x2f45 ? NID_ledacrypt_19709 : \
+  (curveID == 0x0246 || curveID == 0x2f46 ? NID_ledacrypt_16229 : \
+  (curveID == 0x0247 || curveID == 0x2f47 ? NID_ledacrypt_40787 : \
+  (curveID == 0x0248 || curveID == 0x2f48 ? NID_ledacrypt_28411 : \
+  (curveID == 0x0249 || curveID == 0x2f49 ? NID_ledacrypt_22901 : \
+  (curveID == 0x024a || curveID == 0x2f4a ? NID_ledacrypt_52667 : \
+  (curveID == 0x024b || curveID == 0x2f4b ? NID_ledacrypt_36629 : \
+  (curveID == 0x024c || curveID == 0x2f4c ? NID_ledacrypt_30803 : \
+  (curveID == 0x024d || curveID == 0x2f4d ? NID_ledacrypt_61717 : \
+  (curveID == 0x024e || curveID == 0x2f4e ? NID_ledacrypt_42677 : \
+  (curveID == 0x024f || curveID == 0x2f4f ? NID_ledacrypt_35507 : \
+  (curveID == 0x0250 || curveID == 0x2f50 ? NID_ledacrypt_83579 : \
+  (curveID == 0x0251 || curveID == 0x2f51 ? NID_ledacrypt_58171 : \
+  (curveID == 0x0252 || curveID == 0x2f52 ? NID_ledacrypt_48371 : \
+  (curveID == 0x0253 || curveID == 0x2f53 ? NID_ledacrypt_cpa_10883 : \
+  (curveID == 0x0254 || curveID == 0x2f54 ? NID_ledacrypt_cpa_8237 : \
+  (curveID == 0x0255 || curveID == 0x2f55 ? NID_ledacrypt_cpa_7187 : \
+  (curveID == 0x0256 || curveID == 0x2f56 ? NID_ledacrypt_cpa_21011 : \
+  (curveID == 0x0257 || curveID == 0x2f57 ? NID_ledacrypt_cpa_15373 : \
+  (curveID == 0x0258 || curveID == 0x2f58 ? NID_ledacrypt_cpa_13109 : \
+  (curveID == 0x0259 || curveID == 0x2f59 ? NID_ledacrypt_cpa_35339 : \
+  (curveID == 0x025a || curveID == 0x2f5a ? NID_ledacrypt_cpa_25603 : \
+  (curveID == 0x025b || curveID == 0x2f5b ? NID_ledacrypt_cpa_21611 : \
   0 \
-  ))))))))))))))))))))))))))))))))))))))
+  )))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
 ///// OQS_TEMPLATE_FRAGMENT_OQS_KEM_NID_END
 
   /* Returns the hybrid OQS KEM NID for a hybrid curve ID */
@@ -697,8 +778,35 @@
     (curveID == 0x2F32 ? NID_p256_sntrup653 : \
     (curveID == 0x2F33 ? NID_p384_sntrup761 : \
     (curveID == 0x2F34 ? NID_p384_sntrup857 : \
+    (curveID == 0x2f41 ? NID_p256_ledacrypt_23371 : \
+    (curveID == 0x2f42 ? NID_p256_ledacrypt_16067 : \
+    (curveID == 0x2f43 ? NID_p256_ledacrypt_13397 : \
+    (curveID == 0x2f44 ? NID_p256_ledacrypt_28277 : \
+    (curveID == 0x2f45 ? NID_p256_ledacrypt_19709 : \
+    (curveID == 0x2f46 ? NID_p256_ledacrypt_16229 : \
+    (curveID == 0x2f47 ? NID_p384_ledacrypt_40787 : \
+    (curveID == 0x2f48 ? NID_p384_ledacrypt_28411 : \
+    (curveID == 0x2f49 ? NID_p384_ledacrypt_22901 : \
+    (curveID == 0x2f4a ? NID_p384_ledacrypt_52667 : \
+    (curveID == 0x2f4b ? NID_p384_ledacrypt_36629 : \
+    (curveID == 0x2f4c ? NID_p384_ledacrypt_30803 : \
+    (curveID == 0x2f4d ? NID_p521_ledacrypt_61717 : \
+    (curveID == 0x2f4e ? NID_p521_ledacrypt_42677 : \
+    (curveID == 0x2f4f ? NID_p521_ledacrypt_35507 : \
+    (curveID == 0x2f50 ? NID_p521_ledacrypt_83579 : \
+    (curveID == 0x2f51 ? NID_p521_ledacrypt_58171 : \
+    (curveID == 0x2f52 ? NID_p521_ledacrypt_48371 : \
+    (curveID == 0x2f53 ? NID_p256_ledacrypt_cpa_10883 : \
+    (curveID == 0x2f54 ? NID_p256_ledacrypt_cpa_8237 : \
+    (curveID == 0x2f55 ? NID_p256_ledacrypt_cpa_7187 : \
+    (curveID == 0x2f56 ? NID_p384_ledacrypt_cpa_21011 : \
+    (curveID == 0x2f57 ? NID_p384_ledacrypt_cpa_15373 : \
+    (curveID == 0x2f58 ? NID_p384_ledacrypt_cpa_13109 : \
+    (curveID == 0x2f59 ? NID_p521_ledacrypt_cpa_35339 : \
+    (curveID == 0x2f5a ? NID_p521_ledacrypt_cpa_25603 : \
+    (curveID == 0x2f5b ? NID_p521_ledacrypt_cpa_21611 : \
   0 \
-  ))))))))))))))))))))))))))))))))))))))
+  )))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
 ///// OQS_TEMPLATE_FRAGMENT_OQS_HYBRID_KEM_NID_END
 
 /* Returns true if the curve ID is for an OQS KEM */
@@ -750,8 +858,35 @@
   (nid == NID_sntrup653 ? OQS_KEM_alg_ntruprime_sntrup653 : \
   (nid == NID_sntrup761 ? OQS_KEM_alg_ntruprime_sntrup761 : \
   (nid == NID_sntrup857 ? OQS_KEM_alg_ntruprime_sntrup857 : \
+  (nid == NID_ledacrypt_23371 ? OQS_KEM_alg_ledacrypt_23371 : \
+  (nid == NID_ledacrypt_16067 ? OQS_KEM_alg_ledacrypt_16067 : \
+  (nid == NID_ledacrypt_13397 ? OQS_KEM_alg_ledacrypt_13397 : \
+  (nid == NID_ledacrypt_28277 ? OQS_KEM_alg_ledacrypt_28277 : \
+  (nid == NID_ledacrypt_19709 ? OQS_KEM_alg_ledacrypt_19709 : \
+  (nid == NID_ledacrypt_16229 ? OQS_KEM_alg_ledacrypt_16229 : \
+  (nid == NID_ledacrypt_40787 ? OQS_KEM_alg_ledacrypt_40787 : \
+  (nid == NID_ledacrypt_28411 ? OQS_KEM_alg_ledacrypt_28411 : \
+  (nid == NID_ledacrypt_22901 ? OQS_KEM_alg_ledacrypt_22901 : \
+  (nid == NID_ledacrypt_52667 ? OQS_KEM_alg_ledacrypt_52667 : \
+  (nid == NID_ledacrypt_36629 ? OQS_KEM_alg_ledacrypt_36629 : \
+  (nid == NID_ledacrypt_30803 ? OQS_KEM_alg_ledacrypt_30803 : \
+  (nid == NID_ledacrypt_61717 ? OQS_KEM_alg_ledacrypt_61717 : \
+  (nid == NID_ledacrypt_42677 ? OQS_KEM_alg_ledacrypt_42677 : \
+  (nid == NID_ledacrypt_35507 ? OQS_KEM_alg_ledacrypt_35507 : \
+  (nid == NID_ledacrypt_83579 ? OQS_KEM_alg_ledacrypt_83579 : \
+  (nid == NID_ledacrypt_58171 ? OQS_KEM_alg_ledacrypt_58171 : \
+  (nid == NID_ledacrypt_48371 ? OQS_KEM_alg_ledacrypt_48371 : \
+  (nid == NID_ledacrypt_cpa_10883 ? OQS_KEM_alg_ledacrypt_cpa_10883 : \
+  (nid == NID_ledacrypt_cpa_8237 ? OQS_KEM_alg_ledacrypt_cpa_8237 : \
+  (nid == NID_ledacrypt_cpa_7187 ? OQS_KEM_alg_ledacrypt_cpa_7187 : \
+  (nid == NID_ledacrypt_cpa_21011 ? OQS_KEM_alg_ledacrypt_cpa_21011 : \
+  (nid == NID_ledacrypt_cpa_15373 ? OQS_KEM_alg_ledacrypt_cpa_15373 : \
+  (nid == NID_ledacrypt_cpa_13109 ? OQS_KEM_alg_ledacrypt_cpa_13109 : \
+  (nid == NID_ledacrypt_cpa_35339 ? OQS_KEM_alg_ledacrypt_cpa_35339 : \
+  (nid == NID_ledacrypt_cpa_25603 ? OQS_KEM_alg_ledacrypt_cpa_25603 : \
+  (nid == NID_ledacrypt_cpa_21611 ? OQS_KEM_alg_ledacrypt_cpa_21611 : \
   0 \
-  ))))))))))))))))))))))))))))))))))))))
+  )))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
 ///// OQS_TEMPLATE_FRAGMENT_OQS_ALG_NAME_END
 
 /* Returns the classic curve ID for a given hybrid curve */
@@ -796,8 +931,35 @@
   (cid == 0x2F32 ?23: \
   (cid == 0x2F33 ?24: \
   (cid == 0x2F34 ?24: \
+  (cid == 0x2f41 ?23: \
+  (cid == 0x2f42 ?23: \
+  (cid == 0x2f43 ?23: \
+  (cid == 0x2f44 ?23: \
+  (cid == 0x2f45 ?23: \
+  (cid == 0x2f46 ?23: \
+  (cid == 0x2f47 ?24: \
+  (cid == 0x2f48 ?24: \
+  (cid == 0x2f49 ?24: \
+  (cid == 0x2f4a ?24: \
+  (cid == 0x2f4b ?24: \
+  (cid == 0x2f4c ?24: \
+  (cid == 0x2f4d ?25: \
+  (cid == 0x2f4e ?25: \
+  (cid == 0x2f4f ?25: \
+  (cid == 0x2f50 ?25: \
+  (cid == 0x2f51 ?25: \
+  (cid == 0x2f52 ?25: \
+  (cid == 0x2f53 ?23: \
+  (cid == 0x2f54 ?23: \
+  (cid == 0x2f55 ?23: \
+  (cid == 0x2f56 ?24: \
+  (cid == 0x2f57 ?24: \
+  (cid == 0x2f58 ?24: \
+  (cid == 0x2f59 ?25: \
+  (cid == 0x2f5a ?25: \
+  (cid == 0x2f5b ?25: \
   23 \
-  )))))))))))))))))))))))))))))))))))))))
+  ))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
 ///// OQS_TEMPLATE_FRAGMENT_OQS_MAP_HYBRID_END
 
 /* Returns the classical nid for an hybrid alg */
