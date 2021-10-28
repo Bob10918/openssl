@@ -21,18 +21,12 @@ RUN cp bin/AVX2/libXKCP.a /usr/lib/libkeccak.a
 WORKDIR /liboqs
 RUN mkdir build
 WORKDIR /liboqs/build
-RUN cmake -GNinja -DCMAKE_INSTALL_PREFIX=/openssl/oqs -DOQS_ENABLE_KEM_BIKE=OFF -DOQS_ENABLE_KEM_FRODOKEM=OFF -DOQS_ENABLE_KEM_SIKE=OFF \
-                    -DOQS_ENABLE_KEM_SIDH=OFF -DOQS_ENABLE_SIG_PICNIC=OFF -DOQS_ENABLE_KEM_CLASSIC_MCELIECE=OFF -DOQS_ENABLE_KEM_HQC=OFF \
-                    -DOQS_ENABLE_KEM_KYBER=OFF -DOQS_ENABLE_KEM_NTRU=OFF -DOQS_ENABLE_KEM_NTRUPRIME=OFF -DOQS_ENABLE_KEM_SABER=OFF \
-                    -DOQS_ENABLE_SIG_DILITHIUM=OFF -DOQS_ENABLE_SIG_FALCON=OFF -DOQS_ENABLE_SIG_RAINBOW=OFF -DOQS_ENABLE_SIG_SPHINCS=OFF \
-                    -DOQS_ENABLE_SIG_PICNIC=OFF \
-                    ..
+RUN cmake -GNinja -DCMAKE_INSTALL_PREFIX=/openssl/oqs -DOQS_BUILD_ONLY_LIB=ON -DOQS_DIST_BUILD=ON .. 
 RUN ninja && ninja install
 
 # install openssl-oqs
 RUN apt-get install -y cmake gcc libtool libssl-dev make ninja-build git
 WORKDIR /openssl
 ENV LIBOQS_SRC_DIR=/liboqs
-#./Configure no-shared linux-x86_64 -DOQS_DEFAULT_GROUPS=\"p384_ledacrypt_36629:p384_ledacrypt_cpa_15373:X25519:ledacrypt_36629:ledacrypt_cpa_15373:ED448\" -lm -lkeccak
-RUN ./Configure shared linux-x86_64 -DOQS_DEFAULT_GROUPS=\"ledacrypt_36629:ledacrypt_cpa_15373\" -lm -lkeccak
+RUN ./Configure shared linux-x86_64 -lm -lkeccak
 RUN make -j 8
